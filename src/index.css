@@ -67,6 +67,15 @@ html, body {
   letter-spacing: -0.02em;
 }
 
+/* BlurText wraps each word in its own <span> — re-apply gradient so they inherit it correctly */
+.head-text span {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--gold-light) 0%, var(--amber) 45%, var(--plasma-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .home-tagline {
   font-family: 'Major Mono Display', monospace;
   font-size: clamp(0.55rem, 1vw, 0.72rem);
