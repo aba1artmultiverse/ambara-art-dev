@@ -15,12 +15,20 @@ const Home = () => {
           <motion.header {...slideAnimation('down')}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
               <div style={{
-                width: 38, height: 38, borderRadius: '50%',
-                background: 'linear-gradient(135deg, #c9a227, #7b2fff)',
+                width: 42, height: 42, borderRadius: '50%',
+                background: 'linear-gradient(135deg, rgba(201,162,39,0.15), rgba(123,47,255,0.15))',
+                border: '1.5px solid rgba(201,162,39,0.45)',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
-                boxShadow: '0 0 18px rgba(201,162,39,0.35)',
-                fontSize: '1rem',
-              }}>◈</div>
+                boxShadow: '0 0 18px rgba(201,162,39,0.3), 0 0 6px rgba(123,47,255,0.2) inset',
+                padding: 7,
+                flexShrink: 0,
+              }}>
+                <img
+                  src="/logo.png"
+                  alt="Ambara Art logo"
+                  style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }}
+                />
+              </div>
               <span className="mono" style={{
                 fontSize: '0.78rem', letterSpacing: '0.2em',
                 background: 'linear-gradient(135deg, #c9a227, #f2d060)',
